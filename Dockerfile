@@ -1,11 +1,15 @@
-FROM node:20.10.0-alpine
+FROM node:20
 
 WORKDIR /app
 
-COPY . /app
+COPY . .
 
-RUN npm install -g @angular/cli
+RUN npm install 
 
-RUN npm install
+RUN npm install @angular/cli - g
 
-CMD ["ng", "serve", "--host", "0.0.0.0"]
+COPY . .
+
+EXPOSE 4200
+
+CMD ["npm", "start","--", "--host", "0.0.0.0"]
