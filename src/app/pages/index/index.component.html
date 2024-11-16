@@ -1,0 +1,37 @@
+<div id="body">
+<div class="calculadora-container">
+    <h2 class="h">CALCULADORA</h2>
+  
+    <div class="visor">
+      <input type="text" [(ngModel)]="visor" readonly />
+    </div>
+  
+    <div class="teclado">
+      <button (click)="adicionarNoVisor('1')">1</button>
+      <button (click)="adicionarNoVisor('2')">2</button>
+      <button (click)="adicionarNoVisor('3')">3</button>
+      <button (click)="adicionarOperacao('+')">+</button>
+      
+      <button (click)="adicionarNoVisor('4')">4</button>
+      <button (click)="adicionarNoVisor('5')">5</button>
+      <button (click)="adicionarNoVisor('6')">6</button>
+      <button (click)="adicionarOperacao('-')">-</button>
+  
+      <button (click)="adicionarNoVisor('7')">7</button>
+      <button (click)="adicionarNoVisor('8')">8</button>
+      <button (click)="adicionarNoVisor('9')">9</button>
+      <button (click)="adicionarOperacao('*')">*</button>
+  
+      <button (click)="adicionarNoVisor('0')">0</button>
+      <button (click)="limparVisor()">C</button>
+      <button (click)="calcular()">=</button>
+      <button (click)="adicionarOperacao('/')">/</button>
+    </div>
+
+    <div class="visor" style="margin-top: 10px;">
+      <input type="text" [(ngModel)]="result" readonly />
+    </div>
+     
+  </div>
+</div>
+  

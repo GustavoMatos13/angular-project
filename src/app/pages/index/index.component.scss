@@ -1,0 +1,61 @@
+/* calculadora.component.css */
+
+#body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.calculadora-container {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #5c4f41;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+  }
+  
+  .visor {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+  
+  .visor input {
+    width: 99%;
+    height: 35px;
+    font-size: 20px;
+    text-align: right;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+  }
+  
+  .teclado {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  }
+  
+  .teclado button {
+    padding: 20px;
+    font-size: 18px;
+    background-color: #b8a48eb4;;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  .h{
+    color: white;
+  }
+  
+  .teclado button:hover {
+    background-color: #2980b9;
+  }
+
+  
